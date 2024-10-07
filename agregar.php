@@ -28,7 +28,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             }
         }
     
-
     $inyectar = $conn->prepare("INSERT INTO empleados (nombre, apellido, documento_identidad, direccion, email, telefono, foto, estado) 
                   VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
 
